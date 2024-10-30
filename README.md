@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# The Cover-Judging Bookshelf
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React app to help users judge books by their covers.
 
-## Available Scripts
+## The Concept
 
-In the project directory, you can run:
+I often get book recommendations from friends, family, or the internet, and immediately spring into action, purchasing the books used on eBay to add to my collection, ensuring that I'll never miss out on valuable information someone has told me is available. This is how I've gotten to the point I'm at now, with 30+ books on my shelf waiting to be read someday, and no dramatic increases in free time on the horizon.
 
-### `npm start`
+The Cover-Judging Bookshelf is a straightforward React app meant to help solve this problem by giving users the chance to go against conventional wisdom and judge books by their covers. Have a list of 10 recs that you want to cut down? See which covers are ugly!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Being honest with yourself about your reading habits is hard. Making a snap judgment based on aesthetics is easy!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project was created with [Create React App](https://github.com/facebook/create-react-app).
 
-### `npm test`
+## Project Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+First, clone the repository:
 
-### `npm run build`
+```
+git clone https://github.com/apb9717/judge-a-book
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Next, navigate to the appropriate folder:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+cd judge-a-book
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install the project dependencies:
 
-### `npm run eject`
+```
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Finally, start the app:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+and navigate to localhost:3000 in your browser to use the app.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## API Usage
 
-## Learn More
+This project utilizes the OpenLibrary API to fetch simple book information (title/author) and book cover images based on a user search query. The images displayed come from the default images on OpenLibrary based on a one-result relevancy-sorted search. As such, books may have different cover images than are most popular.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## AI Code Credit
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Throughout the development process, I used Claude Sonnet 3.5 (through Perplexity) to review my code and offer tips for debugging and certain implementation. Specific segments of code generated by Claude are highlighted, but as a general statement, the styling was handled entirely by Claude, while the core functionality was mostly handled by me (with a few syntax suggestions from Claude along the way).
